@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Discount" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="twr-lV-jz6">
+                                <rect key="frame" x="45" y="371" width="324" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Ye-TY-dqg"/>
+                                    <constraint firstAttribute="width" constant="320" id="TLv-x9-CM6"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="disSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="dCI-vr-S2Z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpL-Pr-vuO">
+                                <rect key="frame" x="138" y="144" width="138" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nxG-Ke-ntl">
+                                <rect key="frame" x="121" y="237" width="172" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiT-zy-cAL">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-yA-FKv">
+                                        <rect key="frame" x="72" y="0.0" width="100" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="maW-xo-cfe"/>
+                                            <constraint firstAttribute="width" constant="100" id="y72-79-7aC"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price after discount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSk-Ur-Oqq">
+                                <rect key="frame" x="104" y="487.5" width="206.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use slider to adjust discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfY-dL-wma">
+                                <rect key="frame" x="84.5" y="317" width="245" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EI7-Ls-o73">
+                                <rect key="frame" x="138.5" y="431" width="137" height="26.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-Y5-sf0">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFJ-jH-Ykw">
+                                        <rect key="frame" x="104" y="0.0" width="33" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-N5-VI3">
+                                <rect key="frame" x="196" y="544" width="17" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VfY-dL-wma" firstAttribute="top" secondItem="nxG-Ke-ntl" secondAttribute="bottom" constant="50" id="1e2-cG-0Mg"/>
+                            <constraint firstItem="nxG-Ke-ntl" firstAttribute="top" secondItem="zpL-Pr-vuO" secondAttribute="bottom" constant="50" id="6OB-Id-g2P"/>
+                            <constraint firstItem="twr-lV-jz6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6tS-L3-g5H"/>
+                            <constraint firstItem="zpL-Pr-vuO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BLK-4J-cPe"/>
+                            <constraint firstItem="gxQ-N5-VI3" firstAttribute="top" secondItem="RSk-Ur-Oqq" secondAttribute="bottom" constant="30" id="F7t-Tj-6Ob"/>
+                            <constraint firstItem="VfY-dL-wma" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FrB-AJ-Rgm"/>
+                            <constraint firstItem="gxQ-N5-VI3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JvA-Pm-Miv"/>
+                            <constraint firstItem="nxG-Ke-ntl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NxN-aa-ROk"/>
+                            <constraint firstItem="twr-lV-jz6" firstAttribute="top" secondItem="VfY-dL-wma" secondAttribute="bottom" constant="30" id="O2c-ho-BLm"/>
+                            <constraint firstItem="RSk-Ur-Oqq" firstAttribute="top" secondItem="EI7-Ls-o73" secondAttribute="bottom" constant="30" id="OSL-f1-GIg"/>
+                            <constraint firstItem="twr-lV-jz6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SkI-VY-MqH"/>
+                            <constraint firstItem="RSk-Ur-Oqq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UBT-z5-DSt"/>
+                            <constraint firstItem="zpL-Pr-vuO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="pUy-m8-Wor"/>
+                            <constraint firstItem="EI7-Ls-o73" firstAttribute="top" secondItem="twr-lV-jz6" secondAttribute="bottom" constant="30" id="wvf-RA-gqt"/>
+                            <constraint firstItem="EI7-Ls-o73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zO1-Xv-C8q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="disPrice" destination="gxQ-N5-VI3" id="L9t-3J-1sr"/>
+                        <outlet property="oriPrice" destination="xzP-yA-FKv" id="oFy-Jd-Lze"/>
+                        <outlet property="sliderValue" destination="EFJ-jH-Ykw" id="oux-2Y-b9f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>
