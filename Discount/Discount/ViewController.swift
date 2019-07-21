@@ -30,11 +30,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func disSlider(_ sender: UISlider) {
-        if oriPrice.text != "" {
+        if let oriNum = Float(oriPrice.text!) {
             let disNum = sender.value
-            let oriNum = Float(oriPrice.text!)
             sliderValue.text = String(format: "%.2f",disNum)
-            disPrice.text = String(Int(oriNum! * disNum))
+            disPrice.text = String(Int(oriNum * disNum))
         } else {
             disPrice.text = "請填入金額"
         }
