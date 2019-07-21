@@ -17,17 +17,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func check(_ sender: UIButton) {
+    
+    @IBAction func compareCode(_ sender: UITextField) {
         if guessNum.text != "" && Int(guessNum.text!) != nil {
-        if guessNum.text! == defaultValue {
+            if guessNum.text!.count == defaultValue.count && guessNum.text! == defaultValue {
                 result.text = "成功"
-            } else {
+            } else if guessNum.text!.count == defaultValue.count && guessNum.text! != defaultValue {
                 result.text = "錯誤"
             }
         } else {
-            result.text = "請輸入數值"
+            result.text = "請輸入正確位數"
         }
+
     }
+
 }
 
