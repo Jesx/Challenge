@@ -8,14 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var guessNum: UITextField!
     var defaultValue = "23224526"
     @IBOutlet weak var result: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        guessNum.delegate = self
+        guessNum.keyboardType = .numberPad
+    }
+    
+    func textField(_ guessNum: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
+        return string.rangeOfCharacter(from: invalidCharacters) == nil
     }
     
     @IBAction func compareCode(_ sender: UITextField) {

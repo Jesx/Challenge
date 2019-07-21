@@ -43,7 +43,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-yA-FKv">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-yA-FKv">
                                         <rect key="frame" x="72" y="0.0" width="100" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="maW-xo-cfe"/>
@@ -51,7 +51,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -113,7 +113,7 @@
                     </view>
                     <connections>
                         <outlet property="disPrice" destination="gxQ-N5-VI3" id="L9t-3J-1sr"/>
-                        <outlet property="oriPrice" destination="xzP-yA-FKv" id="oFy-Jd-Lze"/>
+                        <outlet property="oriPrice" destination="xzP-yA-FKv" id="71j-C5-iBS"/>
                         <outlet property="sliderValue" destination="EFJ-jH-Ykw" id="oux-2Y-b9f"/>
                     </connections>
                 </viewController>
