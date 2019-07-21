@@ -22,17 +22,27 @@ class ViewController: UIViewController {
     
     @IBAction func areaCal(_ sender: UIButton) {
         
-        if (Int(topLine.text!) != nil && Int(baseLine.text!) != nil && Int(height.text!) != nil) && (Int(topLine.text!)! > 0 && Int(baseLine.text!)! > 0 && Int(height.text!)! > 0) {
-            let t = Double(topLine.text!)
-            let b = Double(baseLine.text!)
-            let h = Double(height.text!)
-            let A = (t! + b!) * h! / 2
-            
+        if let t = Double(topLine.text!), let b = Double(baseLine.text!), let h = Double(height.text!), (Int(topLine.text!)! > 0 && Int(baseLine.text!)! > 0 && Int(height.text!)! > 0) {
+
+            let A = (t + b) * h / 2
             area.text = String(A)
             
         } else {
             area.text = "請輸入正確的數字"
         }
+
+        
+//        if (Int(topLine.text!) != nil && Int(baseLine.text!) != nil && Int(height.text!) != nil) && (Int(topLine.text!)! > 0 && Int(baseLine.text!)! > 0 && Int(height.text!)! > 0) {
+//            let t = Double(topLine.text!)
+//            let b = Double(baseLine.text!)
+//            let h = Double(height.text!)
+//            let A = (t! + b!) * h! / 2
+//
+//            area.text = String(A)
+//
+//        } else {
+//            area.text = "請輸入正確的數字"
+//        }
     }
 }
 
