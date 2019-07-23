@@ -38,7 +38,7 @@
 		56A94A7322E14F2700F6CD20 = {
 			isa = PBXGroup;
 			children = (
-				56A94A7E22E14F2700F6CD20 /* fibonacci */,
+				56A94A7E22E14F2700F6CD20 /* Fibonacci */,
 				56A94A7D22E14F2700F6CD20 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56A94A7E22E14F2700F6CD20 /* fibonacci */ = {
+		56A94A7E22E14F2700F6CD20 /* Fibonacci */ = {
 			isa = PBXGroup;
 			children = (
 				56A94A7F22E14F2700F6CD20 /* AppDelegate.swift */,
@@ -61,7 +61,7 @@
 				56A94A8822E14F2800F6CD20 /* LaunchScreen.storyboard */,
 				56A94A8B22E14F2800F6CD20 /* Info.plist */,
 			);
-			path = fibonacci;
+			path = Fibonacci;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 56A94A7722E14F2700F6CD20 /* Build configuration list for PBXProject "fibonacci" */;
+			buildConfigurationList = 56A94A7722E14F2700F6CD20 /* Build configuration list for PBXProject "Fibonacci" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56A94A7722E14F2700F6CD20 /* Build configuration list for PBXProject "fibonacci" */ = {
+		56A94A7722E14F2700F6CD20 /* Build configuration list for PBXProject "Fibonacci" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56A94A8C22E14F2800F6CD20 /* Debug */,
