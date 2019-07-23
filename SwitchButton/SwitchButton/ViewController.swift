@@ -21,6 +21,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func switchBotton(_ sender: UISwitch) {
+        let bool = sender.isOn
+        textLabel.text = bool.labelText()
+        textLabel.textColor = bool.foregroundColor()
+        textLabel.backgroundColor = bool.backgroundColor()
+        super.view.backgroundColor = bool.foregroundColor()
+/*----------Old version----------
         if sender.isOn {
             textLabel.text = "On"
             textLabel.textColor = UIColor.white
@@ -32,7 +38,32 @@ class ViewController: UIViewController {
             textLabel.backgroundColor = UIColor.white
             super.view.backgroundColor = UIColor.black
         }
+ ------------------------------*/
     }
-    
 }
 
+fileprivate extension Bool{
+    func labelText() -> String {
+        if self {
+            return "On"
+        } else {
+            return "Off"
+        }
+    }
+    
+    func foregroundColor() -> UIColor {
+        if self {
+            return UIColor.white
+        } else {
+            return UIColor.black
+        }
+    }
+    
+    func backgroundColor() -> UIColor {
+        if self {
+            return UIColor.black
+        } else {
+            return UIColor.white
+        }
+    }
+}
