@@ -38,7 +38,7 @@
 		56D4B94222E162EA008BFD8D = {
 			isa = PBXGroup;
 			children = (
-				56D4B94D22E162EA008BFD8D /* areaCalculator */,
+				56D4B94D22E162EA008BFD8D /* AreaCalculator */,
 				56D4B94C22E162EA008BFD8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56D4B94D22E162EA008BFD8D /* areaCalculator */ = {
+		56D4B94D22E162EA008BFD8D /* AreaCalculator */ = {
 			isa = PBXGroup;
 			children = (
 				56D4B94E22E162EA008BFD8D /* AppDelegate.swift */,
@@ -61,7 +61,7 @@
 				56D4B95722E162EB008BFD8D /* LaunchScreen.storyboard */,
 				56D4B95A22E162EB008BFD8D /* Info.plist */,
 			);
-			path = areaCalculator;
+			path = AreaCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 56D4B94622E162EA008BFD8D /* Build configuration list for PBXProject "areaCalculator" */;
+			buildConfigurationList = 56D4B94622E162EA008BFD8D /* Build configuration list for PBXProject "AreaCalculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56D4B94622E162EA008BFD8D /* Build configuration list for PBXProject "areaCalculator" */ = {
+		56D4B94622E162EA008BFD8D /* Build configuration list for PBXProject "AreaCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56D4B95B22E162EB008BFD8D /* Debug */,
