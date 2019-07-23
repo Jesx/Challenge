@@ -5,7 +5,6 @@
 
 * 使用 UISwitch 來切換畫面黑白（ on = 白色，off = 黑色 ）
 * 畫面中間 Label 顏色與背景顏色相反（ on = 黑色，off = 白色 ）
-
 ![img](https://github.com/Jesx/Challenge/blob/master/SwitchButton/SwitchButton.gif)
 
 ### 挑戰#2 （ 費氏數列 ）
