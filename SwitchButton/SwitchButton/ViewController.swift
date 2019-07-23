@@ -44,26 +44,14 @@ class ViewController: UIViewController {
 
 fileprivate extension Bool{
     func labelText() -> String {
-        if self {
-            return "On"
-        } else {
-            return "Off"
-        }
+        return self ? "On" : "Off"
     }
     
     func foregroundColor() -> UIColor {
-        if self {
-            return UIColor.white
-        } else {
-            return UIColor.black
-        }
+        return self ? UIColor.white : UIColor.black
     }
     
     func backgroundColor() -> UIColor {
-        if self {
-            return UIColor.black
-        } else {
-            return UIColor.white
-        }
+        return self ? UIColor.black : UIColor.white
     }
 }
